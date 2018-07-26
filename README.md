@@ -1,24 +1,29 @@
-# README
+# Nous sommes le groupe de THP-Nantes : Bertyn, Mohamed, Lionel, Nicolas et Florian
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Voici la base de donnée sur le Blog des familles.
 
-Things you may want to cover:
+Elle est composée de 5 tables :
 
-* Ruby version
+- users qui a un nom, prénom et email
 
-* System dependencies
+- articles qui a un titre et un contenu
 
-* Configuration
+- categories qui porte un nom
 
-* Database creation
+- commentaries avec seulement un contenu
 
-* Database initialization
+- likes sans arguments
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+Plusieurs liens entre les tables :
 
-* Deployment instructions
+- un article a un auteur(user) et une catégorie
 
-* ...
+- une catégorie peut concerner plusieurs articles
+
+- un commentaire a un auteur(user) et concerne un article
+
+- un like peut être déposé par un user sur un article
+
+
+Vous pouvez vérifier les tables créées avec 10 lignes pour chaque dans db/development.sqlite3
